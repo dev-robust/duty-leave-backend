@@ -1,8 +1,8 @@
 // controllers/userController.js
-
-import bcrypt from 'bcrypt';  // For password hashing
 import jwt from 'jsonwebtoken';  // For generating JWT tokens
 import User from '../models/User.js';  // Assuming you have a User model for database operations
+
+import bcrypt from 'bcryptjs';
 
 // Function to register a new user
 export const registerUser = async (req, res) => {
