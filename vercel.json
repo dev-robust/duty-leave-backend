@@ -9,16 +9,8 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "server.js"
+        "dest": "/server.js"
       }
-    ],
-    "functions": {
-          "api/**/*.{js,ts}": {
-            "memory": 1024,
-            "maxDuration": 30
-          }
-        }
-      }
-      
-  
+    ]
+  }
   
