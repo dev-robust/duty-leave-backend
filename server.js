@@ -17,7 +17,7 @@ app.use("/api/users", authMiddleware, userRoutes);
 app.use("/api/events", authMiddleware, eventRoutes);
 app.use("/api/admin", authMiddleware, adminOnly, adminRoutes);
 
-app.listen(3000, () => {
+app.listen(`https://duty-leave-frontend19.vercel.app/`, () => {
   console.log("Server running on http://localhost:3000");
 
   // Schedule reminders
